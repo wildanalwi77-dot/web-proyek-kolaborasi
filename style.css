@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(45deg,#04140C,#243C24,#029618);
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    backdrop-filter:blur(5px);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #297b22;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+nav ul li a{
+    display: inline block;
+    color:white;
+    text-decoration:none;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    transition: 0.3s; 
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    color:#ffffff;
+    background-color: #72d280;
+    
+}
+
+nav ul li a.active{
+    background-color: #72D280;
+    color: #ffffff;
+}
+
+.hero{
+    height: 100vh;
+    position: relative;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    text-align:center;
+    padding: 80px;
+    background-image: url(images/Eco\ Recycling\ Globe\ with\ E-Waste\ Bin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.hero-text{
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    text-align: left
+}
+.hero-text h1{
+    font-size:40px;
+    color:#f8fafc;
+    margin-bottom:5px;
+}
+
+.hero-text h3{
+    font-size:20px;
+    margin-bottom:20px;
+    color:#7CFC00;
+}
+
+.hero-text p{
+    max-width:650px;
+    line-height:30px;
+    margin:auto;
+    margin-bottom:40px;
+    color:#f8fafc;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#7CFC00;
+    color:#000;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:white;
+}
+.active{
+    color:#7CFC00;
+}
+
+.page-banner{
+    height:45vh;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:70px;
+}
+
+.page-banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.page-banner p{
+    font-size:18px;
+}
+
+.about-page{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:80px 10%;
+    background:#fff;
+}
+
+.about-image img{
+    width:380px;
+    max-width:100%;
+}
+
+.about-text{
+    max-width:600px;
+}
+
+.about-text h2{
+    color:#2E8B57;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#555;
+    line-height:30px;
+    margin-bottom:20px;
+}
+
+.visi-misi{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:70px 10%;
+    background:#f5f5f5;
+}
+
+.box{
+    background:white;
+    width:420px;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.box h2{
+    color:#2E8B57;
+    margin-bottom:20px;
+}
+
+.box ul{
+    padding-left:20px;
+}
+
+.box li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+}
+
+.member h3 {
+    margin-bottom: 15px;
+    color: #ff7a00;
+}
+
+.member p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.member a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.member a:hover {
+    color: #ff7a00;
+}
+
+.member .fa-whatsapp {
+    color: #25D366;
+    margin-right: 8px;
+}
+
+.member .fa-instagram {
+    color: #E4405F;
+    margin-right: 8px;
+}
+
+/*======================
+        FOOTER
+======================*/
+
+.footer{
+    background:#18352f;
+    color:#fff;
+    margin-top:80px;
+}
+
+.footer-container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:40px;
+
+    padding:70px 0;
+
+}
+
+.footer-box h2,
+.footer-box h3{
+
+    color:#7EE6AE;
+
+    margin-bottom:18px;
+
+}
+
+.footer-box p{
+
+    line-height:30px;
+
+    color:#ddd;
+
+}
+
+.footer-box a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#ddd;
+
+    margin:12px 0;
+
+    transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+    color:#7EE6AE;
+
+    transform:translateX(8px);
+
+}
+
+.top-btn{
+
+    margin-top:20px;
+
+    display:inline-block;
+
+    background:#2E8B57;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    color:white !important;
+
+}
+
+.top-btn:hover{
+
+    background:#42b26d;
+
+    transform:none;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.footer-bottom p{
+
+    color:#bbb;
+
+    margin:8px 0;
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-box a:hover{
+
+transform:none;
+
+}
+
+}

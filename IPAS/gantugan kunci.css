@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TAMPILAN UTAMA */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5f1, #eaf2ff);
+    color: #263238;
+    line-height: 1.8;
+    padding: 35px 15px;
+}
+
+/* KONTEN */
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* GAMBAR PRODUK */
+.penghubung{
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+    margin: 10px auto 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+
+.produk-img:hover {
+    transform: scale(1.03);
+}
+
+/* PARAGRAF */
+p {
+    background: white;
+    padding: 18px 22px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* JUDUL BAGIAN */
+h2 {
+    background: linear-gradient(90deg, #087f5b, #20a779);
+    color: white;
+    padding: 12px 20px;
+    margin: 25px 0 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* SUBJUDUL */
+h3 {
+    color: #087f5b;
+    margin: 15px 0 8px;
+    font-size: 17px;
+}
+
+/* DAFTAR ALAT DAN BAHAN */
+ol, ul {
+    background: white;
+    padding: 18px 25px 18px 45px;
+    margin: 12px 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #edf0f0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li::marker {
+    color: #079669;
+    font-weight: bold;
+}
+
+/* EFEK HOVER */
+li:hover {
+    color: #07845d;
+    transition: 0.2s;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 12px;
+    }
+
+    .penghubung{
+        width: 100%;
+        height: 210px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, ol, ul {
+        padding: 15px;
+    }
+}

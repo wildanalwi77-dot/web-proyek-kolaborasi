@@ -1,0 +1,152 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f172a, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+/* CONTAINER 3 KOLOM */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD PRODUK */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+/* EFEK HOVER */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.2);
+}
+
+/* GAMBAR */
+.card img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* JUDUL */
+.card h2 {
+    color: #010104;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* DETAILS */
+details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* SUMMARY */
+summary {
+    background: #2E8B57;
+    color: white;
+
+    padding: 12px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+summary:hover {
+    background: #2E8B57;
+}
+
+/* ISI RUMUS */
+details p {
+    background: #f8fafc;
+    padding: 12px;
+    margin-top: 12px;
+
+    border-left: 4px solid #2E8B57;
+    border-radius: 5px;
+
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .card img {
+        width: 180px;
+        height: 180px;
+    }
+}
